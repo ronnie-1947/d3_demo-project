@@ -10,6 +10,27 @@
     <div class="canvas">
     </div>
 
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+
+    <script>
+    
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDYmeRbAdDbVH2U_2SqBZJdntsAZ0V6nPs",
+        authDomain: "d3-demo-d7ded.firebaseapp.com",
+        projectId: "d3-demo-d7ded",
+        storageBucket: "d3-demo-d7ded.appspot.com",
+        messagingSenderId: "975219484826",
+        appId: "1:975219484826:web:32e4806cdbc64e2236d723"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    const db = firebase.firestore()
+    db.settings({timestampsInSnapshots: true})
+    </script>
+
     <script src="d3.js"></script>
     <script src="index.js" type="module"></script>
 </body>
